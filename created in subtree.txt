@@ -3,3 +3,5 @@ I created this in a sub tree and then committed it!
 Sha of "created in master" is 2224c3c32f8939f73a15e6872019cd84a2a073f2
 
 Oh no! After rebasing from master the sha changed to f7a1f182520c92edf1c67fa9515f6126130a7336!
+
+This is a new modification!
