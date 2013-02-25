@@ -1,0 +1,17 @@
+Here is how our branch off of a branch worked:
+
+1: create a branch "branch-in-testing-from-which-we-need-stuff"
+2: modify master
+3: We want a branch off of the first branch, so create a branch off of "branch-in-testing-from-which-we-need-stuff" called "a-new-branch-off-of-f1e2f64"
+4: modify "branch-in-testing-from-which-we-need-stuff" to represent bug fixes
+
+==============
+At step 4, it looks like this
+* 0406337 - (13 seconds ago) Oops, fix something in the branch  Cliff Burger (HEAD, branch-in-testing-from-which-we-need
+| * c3df8a6 - (5 minutes ago) Using some stuff  Cliff Burger (a-new-branch-off-of-f1e2f64)
+|/
+* f1e2f64 - (88 minutes ago) Add a file that still needs to be tested.  Cliff Burger
+| * b119236 - (86 minutes ago) A change in master that is not in the branch with stuff we need.  Cliff Burger (master)
+|/
+* 49d9086 - (2 hours ago) Start a new experiment in branching  Cliff Burger
+* c96dc32 - (4 weeks ago) This was merged after the foobar commits  Cliff Burger (origin/merged-after-foobar, origin/mas
