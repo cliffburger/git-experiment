@@ -28,7 +28,6 @@ git merge master
 * | c3df8a6 - (12 minutes ago) Using some stuff  Cliff Burger
 | | * 0406337 - (8 minutes ago) Oops, fix something in the branch  Cliff Burger (branch-in-testing-from-which-we-need-st
 
-
 ============================
 Step 6: Merge "branch-in-testing-from-which-we-need-stuff" into master (pull before the dependent branch pulls) 
 In master: git merge branch-in-testing-from-which-we-need-stuff
