@@ -1,4 +1,13 @@
-Here is how our branch off of a branch worked:
+Here is how our branch off of a branch worked
+
+SUMMARY:
+You can branch (B) off a branch (A) off of master (M), fix some stuff in A (A`) and add stuff in B (B`). Because git works in checksums, pulling A and B into master results in the expected checksums. 
+
+For our team, this means that we can take a branch in testing (38654...) which has some things we need for a new branch (37087...). Even if we fix some things in 38654, the merge to master for both branchs will work fine. 
+
+DETAIL
+
+Start: former last commit before I started this experiment was c96dc32
 
 1: create a branch "branch-in-testing-from-which-we-need-stuff"
 2: modify master
@@ -38,3 +47,24 @@ In master: git merge branch-in-testing-from-which-we-need-stuff
 | | * 4dc5182 - (5 minutes ago) Explain what we see after merging master to the new branch  Cliff Burger (origin/a-new-b
 | | *   b6648e3 - (7 minutes ago) Merge branch 'master' into a-new-branch-off-of-f1e2f64  Cliff Burger
 
+=================================
+Result
+*   7e30617 - (7 seconds ago) Merge a-new-branch-off-of-f1e2f64 with conflict resolution  Cliff Burger (HEAD, master)
+|\
+| * 4dc5182 - (8 minutes ago) Explain what we see after merging master to the new branch  Cliff Burger (origin/a-new-bra
+| *   b6648e3 - (11 minutes ago) Merge branch 'master' into a-new-branch-off-of-f1e2f64  Cliff Burger
+| |\
+| * | c3df8a6 - (22 minutes ago) Using some stuff  Cliff Burger
+* | | 2a1a8e8 - (2 minutes ago) Explain git merge branch-in-testing-from-which-we-need-stuff  Cliff Burger
+* | |   f8151e2 - (3 minutes ago) Merge branch 'branch-in-testing-from-which-we-need-stuff'  Cliff Burger
+|\ \ \
+| |_|/
+|/| |
+| * | 0406337 - (17 minutes ago) Oops, fix something in the branch  Cliff Burger (origin/branch-in-testing-from-which-we
+| |/
+| * f1e2f64 - (2 hours ago) Add a file that still needs to be tested.  Cliff Burger
+* | d8251a2 - (11 minutes ago) Explanations through step 4, fixing a bug in the branch from which we need stuff.  Cliff
+* | b119236 - (2 hours ago) A change in master that is not in the branch with stuff we need.  Cliff Burger
+|/
+* 49d9086 - (2 hours ago) Start a new experiment in branching  Cliff Burger
+* c96dc32 - (4 weeks ago) This was merged after the foobar commits  Cliff Burger (origin/merged-after-foobar, merged-aft
