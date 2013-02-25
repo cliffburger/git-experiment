@@ -3,7 +3,7 @@ Here is how our branch off of a branch worked
 SUMMARY:
 You can branch (B) off a branch (A) off of master (M), fix some stuff in A (A`) and add stuff in B (B`). Because git works in checksums, pulling A and B into master results in the expected checksums. 
 
-For our team, this means that we can take a branch in testing (38654...) which has some things we need for a new branch (37087...). Even if we fix some things in 38654, the merge to master for both branchs will work fine. 
+For our team, this means that we can take a branch in testing (38654...) which has some things we need for a new branch (37087...). Even if we fix some things in 38654, the merge to master for both branches will work fine. 
 
 DETAIL
 
