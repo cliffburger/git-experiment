@@ -15,3 +15,15 @@ At step 4, it looks like this
 |/
 * 49d9086 - (2 hours ago) Start a new experiment in branching  Cliff Burger
 * c96dc32 - (4 weeks ago) This was merged after the foobar commits  Cliff Burger (origin/merged-after-foobar, origin/mas
+
+=========================
+Step 5: Merge master into the new branch
+git checkout a-new-branch-off-of-f1e2f64
+git merge master
+
+*   b6648e3 - (52 seconds ago) Merge branch 'master' into a-new-branch-off-of-f1e2f64  Cliff Burger (HEAD, a-new-branch-
+|\
+| * d8251a2 - (76 seconds ago) Explanations through step 4, fixing a bug in the branch from which we need stuff.  Cliff
+| * b119236 - (2 hours ago) A change in master that is not in the branch with stuff we need.  Cliff Burger
+* | c3df8a6 - (12 minutes ago) Using some stuff  Cliff Burger
+| | * 0406337 - (8 minutes ago) Oops, fix something in the branch  Cliff Burger (branch-in-testing-from-which-we-need-st
