@@ -1,3 +1,9 @@
-task :default, [:what] do |t, args|
-   puts "Considering ... #{args.b} "
+=begin
+rake default['cow','pickle']
+rake default['cow','pickle','nada']
+=end
+
+task :default, [:branch,:version] do |t, args|
+   puts "Considering ... #{args.branch} "
+   puts "Considering ... #{args.version} "
 end
